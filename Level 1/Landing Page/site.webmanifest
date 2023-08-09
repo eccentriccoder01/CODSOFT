@@ -1,0 +1,26 @@
+{
+    "name": "Space Exploration Hub",
+    "short_name": "Space Hub",
+    "description": "Explore the cosmos and dive into quantum mysteries.",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#f4f1ef",
+    "theme_color": "#d3b2a1",
+    "icons": [
+      {
+        "src": "favicon_io/apple-touch-icon.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      },
+      {
+        "src": "favicon_io/favicon-32x32.png.png",
+        "sizes": "32x32",
+        "type": "image/png"
+      },
+      {
+        "src": "favicon_io/favicon-16x16.png",
+        "sizes": "16x16",
+        "type": "image/png"
+      }
+    ]
+  }  
