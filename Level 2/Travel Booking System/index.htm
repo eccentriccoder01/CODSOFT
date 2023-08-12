@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Booking App</h1>
+    </header>
+    <main>
+        <div id="registration">
+            <h2>Registration</h2>
+            <form id="registrationForm">
+                <input type="text" id="regUsername" placeholder="Username">
+                <input type="email" id="regEmail" placeholder="Email">
+                <input type="password" id="regPassword" placeholder="Password">
+                <button type="button" id="registerBtn">Register</button>
+            </form>
+        </div>
+
+        <div id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" placeholder="Username">
+                <input type="password" id="loginPassword" placeholder="Password">
+                <button type="button" id="loginBtn">Login</button>
+            </form>
+        </div>
+
+        <div id="booking">
+            <h2>Bookings</h2>
+            <form id="bookingForm">
+                <input type="date" id="bookingDate">
+                <textarea id="bookingDetails" placeholder="Booking Details"></textarea>
+                <button type="button" id="bookBtn">Book</button>
+            </form>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
