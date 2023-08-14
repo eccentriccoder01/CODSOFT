@@ -1,49 +1,15 @@
-const display = document.getElementById('display');
-const buttons = document.querySelectorAll('.btn');
-let currentInput = '';
-let previousInput = '';
-let operator = '';
+const calculator = document.querySelector("#calculator");
+const display = calculator.querySelector(".display");
+const buttons = calculator.querySelectorAll("button");
 
 buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        const value = button.textContent;
-        
-        if (isNaN(value)) {
-            if (value === '=') {
-                if (currentInput && previousInput && operator) {
-                    const result = calculate(parseFloat(previousInput), parseFloat(currentInput), operator);
-                    display.textContent = result;
-                    currentInput = result.toString();
-                    previousInput = '';
-                    operator = '';
-                }
-            } else {
-                operator = value;
-                previousInput = currentInput;
-                currentInput = '';
-            }
-        } else {
-            currentInput += value;
-            display.textContent = currentInput;
-        }
-    });
+  button.addEventListener("click", function() {
+    let value = this.value;
+    let text = display.textContent.trim();
+    if(value==="clear") display.textContent = "0";
+    else if(value==="backspace") display.textContent = text.substring(0, text.length - 1);
+    else if(value==="=") display.textContent = eval(text);
+    else if(value==="+/-") display.textContent = text.startsWith("-") ? text.substring(1) : `-${text}`;
+    else display.textContent = text==="0" ? value : text+value;
+  });
 });
-
-function calculate(num1, num2, op) {
-    switch (op) {
-        case '+':
-            return num1 + num2;
-        case '-':
-            return num1 - num2;
-        case '*':
-            return num1 * num2;
-        case '/':
-            if (num2 !== 0) {
-                return num1 / num2;
-            } else {
-                return 'Error';
-            }
-        default:
-            return 'Error';
-    }
-}
