@@ -13,6 +13,7 @@ body{font-family: Roboto; background-image: url('Images/Stars.jpg'); background-
 .nav-panel li a:hover{color: #ffca45;}
 .logo-panel {display: flex; align-items: center; justify-content: flex-start; position: relative; z-index: 1;}
 .logo-panel img {width: 100px;height: auto;}
+.panel-heading h2{justify-content: right; color: aliceblue;}
 .component-buttons {display: flex;flex-wrap: wrap;margin-top: 20px;justify-content: center;align-items: center;gap: 1px;position: relative;z-index: 2;background-color: grey;padding: 10px;border-radius: 5px;}
 .component-buttons li {list-style: none;}
 .component-buttons li a {color: black;text-decoration: none;transition: color 0.3s;padding: 15px;border-radius: 5px;}
@@ -28,7 +29,7 @@ body{font-family: Roboto; background-image: url('Images/Stars.jpg'); background-
 .plan h3 {margin: 10px 0;font-size: 1.2rem;color: #777;}
 .plan ul {list-style: none;margin: 20px 0;padding: 0;}
 .plan ul li {margin: 10px 0;font-size: 1rem;color: #444;}
-.plan-btn {background-color: #ffca45;color: white;border: none;padding: 8px 20px;border-radius: 3px;cursor: pointer;transition: background-color 0.3s;}
+.plan-btn {background-color: #000072; color: white;border: none;padding: 8px 20px;border-radius: 3px;cursor: pointer;transition: background-color 0.3s;}
 .plan-btn:hover {background-color: #e0b33d;}
 .integration {color: rgb(234, 236, 239);padding: 2rem;margin-bottom: 1rem;text-align: center;}
 .integration-image img {max-width: 100%;height: auto;border-radius: 10px;box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);}
@@ -42,7 +43,7 @@ body{font-family: Roboto; background-image: url('Images/Stars.jpg'); background-
 .subscribe {background-color: #fff;text-align: center;padding: 2rem;margin-bottom: 1rem;}
 .subscribe-form {display: flex;align-items: center;justify-content: center;gap: 10px;}
 .subscribe-form input[type="email"] {padding: 10px;border: none;border-radius: 5px;width: 300px;}
-.subscribe-btn {background-color: #ffca45;color: white;border: none;padding: 10px 20px;border-radius: 5px;cursor: pointer;transition: background-color 0.3s;}
+.subscribe-btn {background-color: #000072; color: white;border: none;padding: 10px 20px;border-radius: 5px;cursor: pointer;transition: background-color 0.3s;}
 .subscribe-btn:hover {background-color: #e0b33d;}
 .business-panel {text-align: center;padding: 2rem;margin-bottom: 1rem;}
 .business-links {list-style: none;display: flex;gap: 20px;justify-content: center;}
